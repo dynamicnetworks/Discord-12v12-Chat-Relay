@@ -1,0 +1,15 @@
+{
+  "token": "0123456789",
+  "channel": 0123456789,
+  "monitor": [
+    {
+      "file": "../../Logs/SentinelBot/Dota12v12.log",
+      "regexes" : [
+        {
+          "search": ".* Dota2SentinelCoordinatorBot.CoordinatorBot - Incoming chat message - Person: (\\S+) - Message: (\\S+)",
+          "replace": "**\\1:** \\2"
+        }
+      ]
+    }
+  ]
+}
